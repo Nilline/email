@@ -1,0 +1,1138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="open-sans"] {
+			font-family: 'Open Sans', arial, sans-serif !important;
+		}
+
+		[style*="karla"] {
+			font-family: 'Karla', arial, sans-serif !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		.container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.main-background-big {}
+
+		.main-background-small {
+			display: none;
+		}
+
+		.logo-name a {
+			font-size: 12px;
+			color: #004225;
+			text-decoration: none;
+		}
+
+		.greetings-main-td {
+			padding-top: 40px;
+			padding-bottom: 53px;
+		}
+
+		.greetings-title-td {
+			padding-bottom: 30px;
+		}
+
+		.greetings-title-td h1 {
+			text-transform: uppercase;
+			color: #43AE02;
+			font-weight: 800;
+			font-size: 46px;
+			line-height: 1.26;
+			margin: 0;
+		}
+
+		.greetings-title-td span {
+			text-transform: lowercase;
+			font-weight: 400;
+			font-size: 38px;
+			line-height: 1.26;
+		}
+
+		.greetings-text-td {
+			font-size: 16px;
+			color: #000;
+			line-height: 1.5;
+		}
+
+		.greetings-text-td p {
+			margin: 0;
+		}
+
+		.greetings-text-td span {
+			font-weight: 700;
+		}
+
+		.get-started-main-td {
+			padding-bottom: 32px;
+		}
+
+		.get-started-title-td {
+			padding-bottom: 14px;
+		}
+
+		.get-started-title-td h2 {
+			font-size: 40px;
+			line-height: 1;
+			font-weight: 700;
+			color: #004225;
+			margin: 0;
+		}
+
+		.get-started-subtitle-td {
+			padding-bottom: 20px;
+		}
+
+		.get-started-subtitle-td p {
+			font-size: 16px;
+			line-height: 1.5;
+			font-weight: 700;
+			color: #000000;
+			margin: 0;
+		}
+
+		.get-started-cards-td {}
+
+		.get-started-card-td {
+			vertical-align: top;
+			width: 25%;
+		}
+
+		.get-started-card-td a {
+			text-decoration: none;
+		}
+
+		.get-started-card-td-space {
+			display: block;
+			width: 17px;
+		}
+
+		.get-started-cards-td p {
+			font-size: 12px;
+			line-height: 1.33;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+			padding-top: 14px;
+			text-align: left;
+		}
+
+		.get-started-cards-td p span {
+			font-weight: 700;
+		}
+
+		.evaluate-main-td {
+			padding-bottom: 36px;
+		}
+
+		.evaluate-td-title {}
+
+		.evaluate-td-title h4 {
+			color: #000000;
+			font-size: 16px;
+			line-height: 1.5;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 0;
+		}
+
+		.evaluate-td-image {
+			padding-top: 28px;
+		}
+
+		.evaluate-td-text {
+			padding-top: 28px;
+		}
+
+		.evaluate-td-text p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		.educate-main-td {
+			padding-bottom: 55px;
+		}
+
+		.educate-td-title {
+			padding-bottom: 14px;
+		}
+
+		.educate-td-text {
+			padding-bottom: 20px;
+		}
+
+		.educate-td-title h4 {
+			color: #000000;
+			font-size: 16px;
+			line-height: 1.5;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 0;
+		}
+
+		.educate-td-text p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		.educate-td-card {
+			height: 156px;
+			vertical-align: bottom;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 230px;
+		}
+
+		.educate-td-card_one {
+			background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 60%), url(https://i.postimg.cc/c4kr8Fmz/educate-1.jpg) no-repeat center / cover;
+		}
+
+		.educate-td-card_two {
+			background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 60%), url(https://i.postimg.cc/9MTTh04C/educate-2.jpg) no-repeat center / cover;
+		}
+
+		.educate-td-card_three {
+			background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 60%), url(https://i.postimg.cc/g2ZG4Z1z/educate-3.jpg) no-repeat center / cover;
+		}
+
+		.educate-td-card_four {
+			background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 60%), url(https://i.postimg.cc/FFCm4p4F/educate-4.jpg) no-repeat center / cover;
+		}
+
+		.educate-td-card a {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 1.33;
+			color: #ffffff;
+			margin: 0;
+			text-decoration: none;
+		}
+
+		.educate-td-card a span {
+			color: #8E8E8E;
+		}
+
+		.educate-td-card-space {
+			width: 20px;
+		}
+
+		.educate-td-card-vertical-space {
+			height: 20px;
+		}
+
+		.educate-td-link {
+			padding-top: 20px;
+		}
+
+		.educate-td-link a {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #43AE02;
+			font-weight: 700;
+		}
+
+		.info-main-td {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.info-main-table {}
+
+		.info-main-td-title {
+			padding-bottom: 27px;
+		}
+
+		.info-main-td-title h3 {
+			font-size: 34px;
+			color: #004225;
+			font-weight: 700;
+			line-height: 1;
+			margin: 0;
+		}
+
+		.info-main-td-text {
+			padding-bottom: 10px;
+		}
+
+		.info-main-td-text-cards {
+			padding-bottom: 45px;
+		}
+
+		.info-main-td-text-cards p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		.info-main-td-text p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		.info-main-td-link {}
+
+		.info-main-td-link a {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #43AE02;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+
+		.info-main-td-cards {
+			padding-bottom: 55px;
+		}
+
+		.info-cards-table {}
+
+		.info-main-td-space {
+			height: 50px;
+		}
+
+		.info-card-td-image {
+			padding-left: 17px;
+			padding-right: 50px;
+			width: 150px;
+		}
+
+		.info-card-td-content p {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		.info-card-td-content span {
+			font-weight: 600;
+			font-style: italic;
+		}
+
+		.latest-news-main-td {
+			padding-bottom: 45px;
+
+		}
+
+		.latest-news-table {}
+
+		.latest-news-td-title {
+			padding-bottom: 25px;
+		}
+
+		.latest-news-td-title h4 {
+			font-size: 24px;
+			line-height: 1.42;
+			font-weight: 800;
+			color: #004225;
+			margin: 0;
+		}
+
+		.latest-news-td-card {
+			vertical-align: top;
+			width: 33.33%;
+		}
+
+		.latest-news-td-card img {
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+		}
+
+		.latest-news-td-card p {
+			font-size: 12px;
+			line-height: 1.33;
+			color: #000000;
+			font-weight: 400;
+			margin: 0;
+			padding-top: 20px;
+		}
+
+		.latest-news-td-card p span {
+			font-weight: 700;
+		}
+
+		.latest-news-td-link {
+			display: inline-block;
+			font-size: 10px;
+			line-height: 1.4;
+			font-weight: 700;
+			color: #43AE02;
+			text-decoration: none;
+			margin-top: 15px;
+		}
+
+		.latest-news-td-space {
+			display: block;
+			width: 15px;
+		}
+
+		.contact-main-td {
+			padding-top: 32px;
+			padding-bottom: 50px;
+		}
+
+		.contact-td-title {
+			width: 100%;
+			padding-bottom: 20px;
+		}
+
+		.contact-td-title p {
+			font-size: 36px;
+			line-height: 1.16;
+			font-weight: 400;
+			color: #43AE02;
+			margin: 0;
+		}
+
+		.contact-td-subtitle {
+			padding-bottom: 35px;
+		}
+
+		.contact-td-subtitle p {
+			font-size: 16px;
+			line-height: 1.5;
+			font-weight: 400;
+			color: #ECE1DA;
+			margin: 0;
+		}
+
+		.contact-td-link {
+			display: inline-block;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		@media (max-width: 767.98px) {
+			.container {
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+
+			.table-600 {
+				width: 560px !important;
+			}
+
+			.greetings-main-td {
+				padding-top: 37px !important;
+				padding-bottom: 30px !important;
+			}
+
+			.greetings-title-td h1 {
+				font-size: 40px !important;
+			}
+
+			.greetings-title-td span {
+				font-size: 33px !important;
+			}
+
+			.greetings-text-td p {
+				font-size: 14px !important;
+			}
+
+			.get-started-title-td h2 {
+				font-size: 30px !important;
+				line-height: 1.21 !important;
+			}
+
+			.get-started-subtitle-td {
+				padding-bottom: 30px !important;
+			}
+
+			.get-started-subtitle-td p {
+				font-size: 14px !important;
+			}
+
+			.info-main-td-title h3 {
+				font-size: 28px !important;
+			}
+
+			.contact-td-title p {
+				font-size: 32px !important;
+			}
+
+			.contact-td-subtitle p {
+				font-size: 14px !important;
+			}
+		}
+
+		@media (max-width: 620px) {
+			.container {
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+
+			.table-600 {
+				width: 400px !important;
+			}
+
+			.table-520 {
+				width: 100% !important;
+			}
+
+			.main-background-big {
+				display: none !important;
+			}
+
+			.main-background-small {
+				display: block !important;
+				width: 100% !important;
+			}
+
+			.info-card-td-image {
+				display: block !important;
+				padding-left: 0 !important;
+				padding-bottom: 24px !important;
+			}
+
+			.info-card-td-content {
+				display: block !important;
+			}
+
+			.info-main-td-cards {
+				padding: 0 !important;
+			}
+
+			.info-main-td-space {
+				height: 66px !important;
+			}
+
+			.greetings-title-td h1 {
+				font-size: 30px !important;
+			}
+
+			.greetings-title-td span {
+				font-size: 24px !important;
+			}
+
+			.get-started-title-td {
+				padding-bottom: 10px !important;
+			}
+
+			.get-started-title-td {
+				padding-bottom: 10px !important;
+			}
+
+			.get-started-title-td h2 {
+				font-size: 28px !important;
+			}
+
+			.get-started-card-td {
+				width: 50% !important;
+				display: inline-block !important;
+				padding-bottom: 26px !important;
+			}
+
+			.get-started-card-td br {
+				display: none !important;
+			}
+
+			.get-started-card-td p {
+				width: 113px !important;
+			}
+
+			.get-started-card-td-space {
+				display: none !important;
+			}
+
+			.get-started-main-td {
+				padding-bottom: 5px !important;
+			}
+
+			.evaluate-td-title,
+			.evaluate-td-text {
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+
+			.evaluate-td-title h4 {
+				font-size: 14px !important;
+			}
+
+			.evaluate-td-image {
+				padding-top: 15px !important;
+			}
+
+			.evaluate-main-td.container {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+			.educate-main-td {
+				padding-bottom: 30px !important;
+			}
+			.educate-td-card {
+				display: block !important;
+				height: auto !important;
+				padding-top: 61.97183% !important;
+				width: 360px !important;
+			}
+
+			.educate-td-card br {
+				display: none !important;
+			}
+
+			.educate-td-card-space {
+				display: block !important;
+				height: 10px !important;
+				width: auto !important;
+			}
+
+			.educate-td-link a {
+				font-size: 14px !important;
+				line-height: 1.71 !important;
+			}
+
+			.info-main-td {
+				padding-top: 25px !important;
+				padding-bottom: 30px !important;
+			}
+
+			.info-main-td-title {
+				padding-bottom: 20px !important;
+			}
+
+			.info-main-td-title h3 {
+				font-size: 24px !important;
+			}
+
+			.info-main-td-text p {
+				font-size: 14px !important;
+			}
+
+			.info-main-td-link a {
+				font-size: 14px !important;
+			}
+
+			.info-main-td-text-cards p {
+				font-size: 14px !important;
+			}
+
+			.info-card-td-content p {
+				font-size: 14px !important;
+				line-height: 1.43 !important;
+			}
+
+			.latest-news-td-title h4 {
+				font-size: 20px !important;
+			}
+
+			.latest-news-td-card {
+				display: block !important;
+				width: 100% !important;
+			}
+
+			.latest-news-td-space {
+				width: 100% !important;
+				display: block !important;
+				height: 25px !important;
+			}
+
+			.latest-news-td-link {
+				margin-top: 10px !important;
+			}
+
+			.latest-news-main-td {
+				padding-bottom: 33px !important;
+			}
+
+			.contact-td-title p {
+				font-size: 28px !important;
+			}
+
+			.contact-td-subtitle p {
+				font-size: 12px !important;
+			}
+		}
+
+		@media (max-width: 420px) {
+			.container {
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+			}
+
+			.evaluate-td-title,
+			.evaluate-td-text {
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+			}
+
+			.table-600 {
+				width: 100% !important;
+			}
+
+			.latest-news-td-card p {
+				font-size: 10px !important;
+			}
+
+			.educate-td-card {
+				width: calc(100% - 20px) !important;
+			}
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Climate School</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+		<tr>
+			<td>
+				<table class="main table-600" cellpadding="0" cellspacing="0" width="600">
+					<tr>
+						<td class="main-background-td">
+							<a href="#">
+								<img class="main-background-big" src="https://i.postimg.cc/MK1h1Vs7/header.jpg" alt="header">
+								<img class="main-background-small" src="https://i.postimg.cc/k5d8SLgc/main-background-small.jpg" alt="header">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="greetings-main-td container" bgcolor="#ffffff">
+							<table class="greetings-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="greetings-title-td">
+										<h1 style="font-family: Arial, Helvetica, sans-serif, 'karla';">
+											Welcome to The <br /> Climate School <br />
+											<span>powered by Kite Insights</span>
+										</h1>
+									</td>
+								</tr>
+								<tr>
+									<td class="greetings-text-td">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+											Thank you for taking the first step to empowering your team with the knowledge, motivation and tools to support climate action within your
+											business.
+											<br />
+											<br />
+											<span>82% of employees</span> say they are ready to take climate action at work. Are you ready to provide them with the tools and training they
+											need?
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="get-started-main-td container" bgcolor="#ffffff">
+							<table class="get-started-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="get-started-title-td">
+										<h2 style="font-family: Arial, Helvetica, sans-serif, 'karla';">Get started</h2>
+									</td>
+								</tr>
+								<tr>
+									<td class="get-started-subtitle-td">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">The Climate School is a ‘transformation toolkit’, with four components:</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="get-started-cards-td" align="center">
+										<table class="get-started-cards table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td class="get-started-card-td" align="center">
+													<a href="#">
+														<img src="https://i.postimg.cc/rphsGKVJ/evaluate.png" alt="Evaluate">
+														<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+															<span>Evaluate:</span> your <br /> knowledge, skills <br /> and engagement <br /> with climate
+														</p>
+													</a>
+												</td>
+												<td class="get-started-card-td-space"></td>
+												<td class="get-started-card-td" align="center">
+													<a href="#">
+														<img src="https://i.postimg.cc/rFt48CVL/educate.png" alt="Educate">
+														<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+															<span>Educate:</span> about <br /> climate science and <br /> your responsibility <br /> as business leaders
+														</p>
+													</a>
+												</td>
+												<td class="get-started-card-td-space"></td>
+												<td class="get-started-card-td" align="center">
+													<a href="#">
+														<img src="https://i.postimg.cc/rsRDwML9/activate.png" alt="Activate">
+														<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+															<span>Activate:</span> new <br /> innovations and <br /> ignite a climate <br /> project in your <br /> company
+														</p>
+													</a>
+												</td>
+												<td class="get-started-card-td-space"></td>
+												<td class="get-started-card-td" align="center">
+													<a href="#">
+														<img src="https://i.postimg.cc/dQgBm0Dw/advocate.png" alt="Advocate">
+														<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+															<span>Advocate:</span> for <br /> change in your <br /> industry
+														</p>
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="evaluate-main-td container" bgcolor="#ffffff">
+							<table class="evatuate-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="evaluate-td-title">
+										<h4 style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">Evaluate</h4>
+									</td>
+								</tr>
+								<tr>
+									<td class="evaluate-td-image">
+										<a href="#">
+											<img src="https://i.postimg.cc/26MRdB1n/evaluate.jpg" alt="evaluate">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="evaluate-td-text">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+											The 'Climate Action Readiness Assessment' helps gauge employee engagement with climate and sustainability based on their Head (knowledge), Heart
+											(commitment) and hands (ability to act). The 'CARA' score provides a benchmark against which progress can be measured year on year.
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="educate-main-td container" bgcolor="#ffffff">
+							<table class="educate-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="educate-td-title">
+										<h4 style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">Educate</h4>
+									</td>
+								</tr>
+								<tr>
+									<td class="educate-td-text">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+											The Climate School 'Educate' phase includes a range of e-learnings and live sessions.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="educate-td-main-cards">
+										<table class="educate-card-table table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td class="educate-td-card educate-td-card_one">
+													<a href="#" style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														Video-based e-learning, featuring <br /> experts, scientists and... <span>read&#160;more</span>
+													</a>
+												</td>
+												<td class="educate-td-card-space"></td>
+												<td class="educate-td-card educate-td-card_two">
+													<a href="#" style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														Lessons sorted into bitesize playlists for <br /> users to work through at their own pace.
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="educate-td-card-vertical-space"></td>
+								</tr>
+								<tr>
+									<td class="educate-td-main-cards">
+										<table class="educate-card-table table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td class="educate-td-card educate-td-card_three">
+													<a href="#" style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														A range of complementary live and <br /> virtual workshops, webinars... <span>read&#160;more</span>
+													</a>
+												</td>
+												<td class="educate-td-card-space"></td>
+												<td class="educate-td-card educate-td-card_four">
+													<a href="#" style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														Creating and curating – with partners – <br /> some of the best content &... <span>read&#160;more</span>
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="educate-td-link">
+										<a style="font-family: Arial, Helvetica, sans-serif, 'open-sans';" href="#">Download our full programme overview</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="info-main-td container" bgcolor="#F6F0ED">
+							<table class="info-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="info-main-td-title">
+										<h3 style="font-family: Arial, Helvetica, sans-serif, 'karla';">Request a demo</h3>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-text">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+											Every organisation is different. But we can help you unlock the potential of your employees to accelerate the green transformation of your
+											business.
+											<br />
+											<br />
+											Book a session with our expert team to help understand what your business needs through our bespoke assessment process and get a demo of the
+											platform in action.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-link">
+										<a style="font-family: Arial, Helvetica, sans-serif, 'open-sans';" href="#">Get in touch to book a demo</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="info-main-td container" bgcolor="#ffffff">
+							<table class="info-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="info-main-td-title">
+										<h3 style="font-family: Arial, Helvetica, sans-serif, 'karla';">In-depth research</h3>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-text">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+											As the climate crisis deepens, employee engagement will be one of the main indicators and predictors of business performance and resilience. Our
+											latest employee research identifies the business case for organisations to act on climate and upskill their teams to retain the best staff.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-link">
+										<a style="font-family: Arial, Helvetica, sans-serif, 'open-sans';" href="#">Read key findings</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="info-main-td container" bgcolor="#ffffff">
+							<table class="info-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="info-main-td-title">
+										<h3 style="font-family: Arial, Helvetica, sans-serif, 'karla';">Recent client testimonials</h3>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-text-cards">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+											Still not sure if working with the Climate School is right for your business? Don’t just take our word for it.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-cards">
+										<table class="info-cards-table table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td class="info-card-td-image">
+													<img src="https://i.postimg.cc/Bb5qMRmB/Pwclogo.png" alt="PWC">
+												</td>
+												<td class="info-card-td-content">
+													<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														“The e-learning has provided us with a great foundation, and we’re excited to explore with the Climate School how we can support our
+														employees to go further and deeper.”
+														<br />
+														<br />
+														<span>Charisse Cruz, Global ESG Upskilling Manager at PWC</span>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-space"></td>
+								</tr>
+								<tr>
+									<td class="info-main-td-cards">
+										<table class="info-cards-table table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td class="info-card-td-image">
+													<img src="https://i.postimg.cc/BQQzbdx9/Schneider.png" alt="Schneider">
+												</td>
+												<td class="info-card-td-content">
+													<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														"With employees motivated and ready to act, we can accelerate our ambition and our journey as an Impact company and meet the challenge of
+														the climate crisis."
+														<br />
+														<br />
+														<span>Xavier Denoly, SVP Sustainable Development at Schneider Electric C</span>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="info-main-td-space"></td>
+								</tr>
+								<tr>
+									<td class="info-main-td-cards">
+										<table class="info-cards-table table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td class="info-card-td-image">
+													<img src="https://i.postimg.cc/xTCsnL29/microsoft.png" alt="Microsoft">
+												</td>
+												<td class="info-card-td-content">
+													<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">
+														"The Climate Action Readiness Assessment gave us a much deeper understanding of our employee base. It’s helped us appreciate where our
+														employees are at, and what must be done next to unlock potential and drive progress in their learning".
+														<br />
+														<br />
+														<span>Eve Joseph, Sustainability Customer Lead at Microsoft </span>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="latest-news-main-td container" bgcolor="#ffffff">
+							<table class="latest-news-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="latest-news-td-title">
+										<h4 style="font-family: Arial, Helvetica, sans-serif, 'karla';">Our latest news and updates</h4>
+									</td>
+								</tr>
+								<tr>
+									<td class="latest-news-td">
+										<table class="latest-news-cards-table table-520" cellpadding="0" cellspacing="0" width="520">
+											<tr>
+												<td style="font-family: Arial, Helvetica, sans-serif, 'open-sans';" class="latest-news-td-card">
+													<a href="#">
+														<img src="https://i.postimg.cc/B6qq6J49/latest-news-1.jpg" alt="image">
+													</a>
+													<p>
+														<span>Climate justice means racial justice:</span> our recent panel discussion in partnership with the New York Times at COP26 in Glasgow
+														tackles
+														what this means and why it is so important.
+													</p>
+													<a class="latest-news-td-link" href="#">Watch the panel discussion</a>
+												</td>
+												<td class="latest-news-td-space"></td>
+												<td style="font-family: Arial, Helvetica, sans-serif, 'open-sans';" class="latest-news-td-card">
+													<a href="#">
+														<img src="https://i.postimg.cc/QMjLgSPc/latest-news-2.jpg" alt="image">
+													</a>
+													<p>
+														<span>A conversation on leadership, purpose and inclusion:</span> we were invited to a fireside chat to discuss with a gendered lense the
+														significant global challenges from technology to climate change, in partnership with Women’s Forum Global Meeting 2021.
+													</p>
+													<a class="latest-news-td-link" href="#">Watch the fireside chat</a>
+												</td>
+												<td class="latest-news-td-space"></td>
+												<td style="font-family: Arial, Helvetica, sans-serif, 'open-sans';" class="latest-news-td-card">
+													<a href="#">
+														<img src="https://i.postimg.cc/P5jfcW95/latest-news-3.jpg" alt="image">
+													</a>
+													<p>
+														<span>The rallying cry:</span> catalysing investment to scale gender solutions in Africa.
+													</p>
+													<a class="latest-news-td-link" href="#">Read the full report</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="contact-main-td" align="center" bgcolor="#000000">
+							<table class="contact-main-table table-520" cellpadding="0" cellspacing="0" width="520">
+								<tr>
+									<td class="contact-td-title" align="center">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'karla';">Further contact</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="contact-td-subtitle" align="center">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'open-sans';">Follow us to keep up to date with our latest news </p>
+									</td>
+								</tr>
+								<tr align="center">
+									<td class="contact-td-link">
+										<a href="#">
+											<img src="https://i.postimg.cc/NFPt0TfZ/twitter.png" alt="twitter">
+										</a>
+									</td>
+									<td class="contact-td-link">
+										<a href="#">
+											<img src="https://i.postimg.cc/Gtr0hKCM/linkedin.png" alt="Linkedin">
+										</a>
+									</td>
+									<td class="contact-td-link">
+										<a href="#">
+											<img src="https://i.postimg.cc/sgxkX1kR/global.png" alt="Global">
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
